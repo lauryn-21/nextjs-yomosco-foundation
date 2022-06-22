@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import styles from '../../components/layout.module.css'
 import Head from 'next/head';
 
 

@@ -1,13 +1,16 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import styles from '../../components/layout.module.css'
+
 
 
 
 export default function GoalsPost() {
    return ( 
-      <layout>
+      <div className={styles.div}>
+      
          <Head>
-            <h1>Organization Goals</h1>
+            <h1 className={styles.goal}>Organization Goals</h1>
          </Head>
          
       <p>The strategic objectives that YOMOSCO has established to outline expected outcomes and guidethe efforts of board members, employees and volunteers are as follows:</p>
@@ -56,7 +59,7 @@ export default function GoalsPost() {
       <p>YOMOSCO remains true to our mission and works to produce quality programs, provideexceptional service and maximizes the support of the community.
       </p>
 
-      </layout>
+      </div>
 
    );
 }

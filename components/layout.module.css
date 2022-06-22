@@ -1,0 +1,90 @@
+/* about */
+.container {
+   max-width: 36rem;
+   padding: 0 1rem;
+   margin: 3rem auto 6rem;
+   background-color: gray;
+
+ }
+.profile{
+   display: flex;
+   justify-content: center;
+   color: peru;
+}
+.layout{
+   background-color: grey;
+}
+.history{
+   color: green;
+   justify-content: center;
+   display: flex;
+}
+.footer {
+   display: flex;
+   flex: 1;
+   padding: 2rem 0;
+   border-top: 1px solid #eaeaea;
+   justify-content: center;
+   align-items: center;
+ }
+ /* organization goals */
+ .div{
+   background-color: cornsilk;
+   max-width: 40rem;
+   padding: 0 2rem;
+   margin: 4rem auto 8rem;
+ }
+ .goal{
+   display: flex;
+   justify-content: center;
+   color: darkolivegreen;
+ }
+ /* organization structure */
+ .structure{
+   background-color: peachpuff;
+   max-width: 40rem;
+   padding: 0 2rem;
+   margin: 4rem auto 8rem;
+ }
+ .h{
+   display: flex;
+   justify-content: center;
+   color: darkslategrey;
+ }
+ .i{
+   color: brown;
+ }
+ .ol{
+   color: darkgreen;
+ }
+ /* organization training */
+ .training{
+   background-color: darkkhaki;
+   max-width: 40rem;
+   padding: 0 2rem;
+   margin: 4rem auto 8rem;
+
+ }
+ .program{
+   display: flex;
+   justify-content: center;
+   color: darkolivegreen;
+ }
+ /* vision and mission */
+ .page{
+   background-color: dimgray;
+   max-width: 40rem;
+   padding: 0 2rem;
+   margin: 4rem auto 8rem;
+ }
+ .post{
+   display: flex;
+   justify-content: center;
+   color: darkturquoise;
+ }
+ .vision{
+   color: deepskyblue;
+ }
+ .mission{
+   color: midnightblue;
+ }

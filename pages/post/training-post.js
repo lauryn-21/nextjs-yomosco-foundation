@@ -1,19 +1,23 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import styles from '../../components/layout.module.css'
 
 
 
-export default function StructurePost() {
+
+export default function TrainingPost() {
    return ( 
-      <layout>
+      // <layout> className={styles.layout}
+      <div className={styles.training}>
+
          <Head>
-            <h1>TRAINING PROGRAMS</h1>
+            <h1 className={styles.program}>TRAINING PROGRAMS</h1>
          </Head>
-         <ul>
+         <ol>
             <li>Tailoring</li>
             <li>Events management</li>
             <li>Catering</li>
-         </ul>
-      </layout>
+         </ol>
+      </div>
    );
 }
