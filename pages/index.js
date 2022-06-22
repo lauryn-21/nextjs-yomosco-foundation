@@ -4,10 +4,21 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link';
 // import logo from '../public/images/yomosco';
 
+import { getSortedPostsData } from '../lib/posts';
 
-export default function Home() {
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
+export default function Home({ allPostsData }) {
   return (
-    <div className={styles.container}>
+   
+    
+       <div className={styles.container}>
       {/* <Image src="/public/images/yomosco-1.jpeg" width="200px"  height="200px" layout="fill"/>
       <Image src={logo} width="300px"  height="200px"/> */}
 
@@ -36,7 +47,7 @@ export default function Home() {
 
           <a href="/post/vision-post" className={styles.card}>
             <h2>Vision and mission &rarr;</h2>
-            <p>Hello  nice to meet you</p>
+            <p>Our vision and mission</p>
           </a>
 
           <a
@@ -45,7 +56,7 @@ export default function Home() {
           >
             <h2>Organization Goals &rarr;</h2>
             <p>
-              We are here to serve you the best
+              Here are some of our best goals
             </p>
           </a>
 
@@ -94,6 +105,10 @@ export default function Home() {
        
       </footer>
     </div>
-  )
+
+  
+);
 }
+  
+
 
